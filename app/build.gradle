@@ -13,6 +13,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+        def STRING = "String"
+        def BUILD_VALUE_NAME_APP_UUID = "APP_UUID"
+        def APP_UUID = '8f37dc4b-c699-4369-83c7-97d480dd0902'
+        buildConfigField STRING, BUILD_VALUE_NAME_APP_UUID, '"' + APP_UUID + '"'
+
+        manifestPlaceholders = [app_uuid: APP_UUID]
     }
     buildTypes {
         release {
