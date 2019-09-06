@@ -50,6 +50,8 @@ public class OpenReceiptInteractor {
     }
 
     private Position createPosition(BigDecimal price, BigDecimal quantity) {
+        Set<ExtraKey> extraKeys = new HashSet<>();
+        extraKeys.add(new ExtraKey(UUID.randomUUID().toString(), BuildConfig.APP_UUID, null));
 
         return Position.Builder.newInstance(
                 UUID.randomUUID().toString(),
@@ -60,6 +62,7 @@ public class OpenReceiptInteractor {
                 price,
                 quantity
         )
+                .setExtraKeys(extraKeys)
                 .build();
     }
 }
