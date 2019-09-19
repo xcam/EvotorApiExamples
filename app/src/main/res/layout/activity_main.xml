@@ -3,12 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnOpenReceipt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_a_btn_open_receipt" />
+        android:text="@string/main_a_btn_open_receipt"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnInternetReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_internet_receipt"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenReceipt"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package ru.xcam.evotor.example
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import ru.xcam.evotor.example.interactor.InternetReceiptInteractor
 import ru.xcam.evotor.example.interactor.OpenReceiptInteractor
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,10 @@ class MainActivity : AppCompatActivity() {
 
         btnOpenReceipt.setOnClickListener {
             OpenReceiptInteractor().execute(this)
+        }
+
+        btnInternetReceipt.setOnClickListener {
+            InternetReceiptInteractor().execute(this)
         }
     }
 }
