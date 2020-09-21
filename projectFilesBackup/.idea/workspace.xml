@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c06d1e89-cc76-46a5-b1d4-4d0ac39c7e48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/media.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/ru/xcam/evotor/example/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/ru/xcam/evotor/example/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/interactor/InternetReceiptInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/interactor/InternetReceiptInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/interactor/OpenReceiptInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/interactor/OpenReceiptInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/ru/xcam/evotor/example/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/ru/xcam/evotor/example/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Evotor_SM2_Emulator_API_23" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YOD4YcfuVCLb6AOCWrO4MMR7g6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="evotor-st_3_7-192.168.1.61:2111" />
+    <property name="DEBUGGABLE_PROCESS" value="ru.xcam.evotor.example" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="10.10.21.207:2111" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-15T16:49:14.574Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../distrib/android_sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.5.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="ru.xcam.evotor.example.telegram" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ru.xcam.evotor.example.device" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.xcam.evotor.example.interactor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xcam.evotor.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xcam.evotor.example" />
+      <option name="MAIN_CLASS_NAME" value="ru.xcam.evotor.example.ExampleUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleUnitTest.addition_isCorrect" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xcam.evotor.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xcam.evotor.example" />
+      <option name="MAIN_CLASS_NAME" value="ru.xcam.evotor.example.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="addition_isCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Burger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xcam.evotor.example.interactor.Burger" />
+      <module name="app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xcam.evotor.example.interactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleUnitTest.testMe90" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xcam.evotor.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xcam.evotor.example" />
+      <option name="MAIN_CLASS_NAME" value="ru.xcam.evotor.example.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="testMe90" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.ExampleUnitTest.addition_isCorrect" />
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+        <item itemvalue="Application.Burger" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c06d1e89-cc76-46a5-b1d4-4d0ac39c7e48" name="Default Changelist" comment="" />
+      <created>1567753035579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567753035579</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Новое приложение">
+      <created>1567753217598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567753217598</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Подключил библиотеку evotor">
+      <created>1567753489467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567753489467</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил кнопку на экранную форму">
+      <created>1567753510878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567753510878</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавление 2-х позиций в чек">
+      <created>1567754306399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567754306399</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавление app_uuid">
+      <created>1567755169922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567755169923</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавление app_uuid">
+      <created>1567755399325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567755399325</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавление 2 товаров в чек (объединяются)">
+      <created>1567755523814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567755523814</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавление 2 товаров в чек (НЕ объединяются)">
+      <created>1567755544471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567755544471</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Пример пробития чеков для интернет магазина">
+      <created>1568879211238</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568879211238</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Новое приложение" />
+    <MESSAGE value="Подключил библиотеку evotor" />
+    <MESSAGE value="Добавил кнопку на экранную форму" />
+    <MESSAGE value="Добавление 2-х позиций в чек" />
+    <MESSAGE value="Добавление app_uuid" />
+    <MESSAGE value="Добавление 2 товаров в чек (объединяются)" />
+    <MESSAGE value="Добавление 2 товаров в чек (НЕ объединяются)" />
+    <MESSAGE value="Пример пробития чеков для интернет магазина" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пример пробития чеков для интернет магазина" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595262152099">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1595262152099" />
+    <state x="499" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1591192460708">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="499" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1591192460708" />
+    <state x="483" y="109" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1591192011915">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="483" y="109" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591192011915" />
+    <state x="576" y="222" key="AndroidProcessChooserDialog" timestamp="1591194558359">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="576" y="222" key="AndroidProcessChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1591194558359" />
+    <state x="144" y="79" key="DiffContextDialog" timestamp="1594638925377">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" key="DiffContextDialog/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594638925377" />
+    <state width="1398" height="490" key="GridCell.Tab.0.bottom" timestamp="1595262313989">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="490" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594651542985" />
+    <state width="1398" height="490" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595262313989" />
+    <state width="1398" height="490" key="GridCell.Tab.0.center" timestamp="1595262313987">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="490" key="GridCell.Tab.0.center/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594651542983" />
+    <state width="1398" height="490" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595262313987" />
+    <state width="1398" height="490" key="GridCell.Tab.0.left" timestamp="1595262313986">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="490" key="GridCell.Tab.0.left/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594651542981" />
+    <state width="1398" height="490" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595262313986" />
+    <state width="1398" height="490" key="GridCell.Tab.0.right" timestamp="1595262313989">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="490" key="GridCell.Tab.0.right/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594651542984" />
+    <state width="1398" height="490" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595262313989" />
+    <state width="1398" height="300" key="GridCell.Tab.1.bottom" timestamp="1591261221472">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="300" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591261221472" />
+    <state width="1398" height="300" key="GridCell.Tab.1.center" timestamp="1591261221471">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="300" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1591261221471" />
+    <state width="1398" height="300" key="GridCell.Tab.1.left" timestamp="1591261221470">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="300" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1591261221470" />
+    <state width="1398" height="300" key="GridCell.Tab.1.right" timestamp="1591261221472">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="300" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1591261221472" />
+    <state x="435" y="168" key="RollbackChangesDialog" timestamp="1594638925905">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="435" y="168" key="RollbackChangesDialog/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594638925905" />
+    <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1591194624112">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="200" width="540" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1591194624112" />
+    <state x="374" y="207" width="692" height="486" key="find.popup" timestamp="1591192832353">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="374" y="207" width="692" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591192832353" />
+    <state width="456" height="243" key="javadoc.popup.new" timestamp="1595262437993">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="456" height="243" key="javadoc.popup.new/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594640688090" />
+    <state width="456" height="243" key="javadoc.popup.new/0.0.1440.900@0.0.1440.900" timestamp="1595262437993" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1594639961965">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1594639961965" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/ru/xcam/evotor/example/interactor/OpenReceiptInteractor.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/ru/xcam/evotor/example/ExampleUnitTest.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>Cursor&lt;Receipt.Header&gt; cursor = ReceiptApi.getReceiptHeaders(activity, Receipt.Type.SELL);
+cursor.moveToLast();
+cursor.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.Receipt</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cursor.moveToNext();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Cursor&lt;Receipt.Header&gt; cursor = ReceiptApi.getReceiptHeaders(activity, Receipt.Type.SELL);
+cursor.moveToNext();
+cursor.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.Receipt</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Cursor&lt;Receipt.Header&gt; cursor = ReceiptApi.getReceiptHeaders(activity, Receipt.Type.SELL);
+cursor.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.Receipt</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ReceiptApi.getReceipt(activity, &quot;b73525b2-689d-486d-9e60-4d4f4a05ed8a&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.ReceiptApi,ru.evotor.framework.receipt.Receipt,ru.evotor.query.Cursor</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Cursor&lt;Receipt.Header&gt; cursor = ReceiptApi.getReceiptHeaders(activity, Receipt.Type.SELL);
+cursor.moveToLast();
+cursor.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.ReceiptApi,ru.evotor.framework.receipt.Receipt,ru.evotor.query.Cursor</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Cursor&lt;Receipt.Header&gt; cursor = ReceiptApi.getReceiptHeaders(activity, Receipt.Type.SELL);
+cursor.moveToNext();
+cursor.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.ReceiptApi,ru.evotor.framework.receipt.Receipt,ru.evotor.query.Cursor</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ReceiptApi.getReceipt(getApplicationContext(), Receipt.Type.SELL)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>ru.evotor.framework.receipt.Receipt,ru.evotor.framework.receipt.ReceiptApi</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ReceiptApi.getReceipt(getApplicationContext(), Receipt.Type.SELL)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>receipt.sessionNumber</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>receipt.documentNumber</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;e0a48c54-dff1-4647-a151-1113c3b15c1e&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;843db3f7-02ed-4445-a709-3425cdb8a822&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

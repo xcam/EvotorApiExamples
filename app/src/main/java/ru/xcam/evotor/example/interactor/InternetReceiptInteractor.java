@@ -16,11 +16,18 @@ import ru.evotor.framework.component.PaymentPerformer;
 import ru.evotor.framework.core.IntegrationException;
 import ru.evotor.framework.core.IntegrationManagerCallback;
 import ru.evotor.framework.core.IntegrationManagerFuture;
-import ru.evotor.framework.core.action.command.print_receipt_command.PrintSellReceiptCommand;
+import ru.evotor.framework.core.action.command.PrintSellReceiptCommand2;
+import ru.evotor.framework.core.action.command.print_receipt_command.PrintReceiptCommandErrorData;
+import ru.evotor.framework.core.action.command.print_receipt_command.PrintReceiptCommandErrorDataFactory;
+import ru.evotor.framework.counterparties.collaboration.agent_scheme.Agent;
+import ru.evotor.framework.counterparties.collaboration.agent_scheme.Principal;
 import ru.evotor.framework.payment.PaymentSystem;
 import ru.evotor.framework.payment.PaymentType;
 import ru.evotor.framework.receipt.Payment;
 import ru.evotor.framework.receipt.Position;
+import ru.evotor.framework.receipt.position.AgentRequisites;
+import ru.evotor.framework.users.UserApi;
+import ru.xcam.evotor.example.telegram.TelegramApi;
 
 public class InternetReceiptInteractor {
 
@@ -36,10 +43,8 @@ public class InternetReceiptInteractor {
     };
 
 
-    private static final int RECEIPT_COUNT = 12;
-    private static final int MAX_POSITION_IN_RECEIPT = 3;
-    private static final int START_MARK_OFFSET = 312;
-    private static final int STOP_MARK_OFFSET = 500;
+    private static final int RECEIPT_COUNT = 110;
+    private static final int MAX_POSITION_IN_RECEIPT = 7;
 
     public void execute(final Activity activity) {
         new Thread() {
@@ -47,24 +52,18 @@ public class InternetReceiptInteractor {
             public void run() {
                 super.run();
 
-                final StringBuffer buffer = new StringBuffer();
+                String userUuid = UserApi.getAllUsers(activity).get(0).getUuid();
+
                 Random random = new Random();
-
-                int currentMarkOffser = START_MARK_OFFSET;
-
-                for (int receiptIndex = 0; receiptIndex < RECEIPT_COUNT; receiptIndex++) { //12
-                    int positionCount = random.nextInt(MAX_POSITION_IN_RECEIPT) + 1;
+                TelegramApi.INSTANCE.sendMessage("Начали");
+                for (int receiptIndex = 1; receiptIndex < RECEIPT_COUNT; receiptIndex++) { //12
+                    int positionCount = 1;//random.nextInt(MAX_POSITION_IN_RECEIPT) + 1;
 
                     List<Position> positions = new ArrayList<>();
                     for (int i = 0; i < positionCount; i++) {
                         String mark = null;
 
                         BigDecimal quantity = new BigDecimal(random.nextInt(6) + 1);
-                        if (random.nextInt(100) < 80 && currentMarkOffser < STOP_MARK_OFFSET) {
-                            mark = getMark(currentMarkOffser);
-                            currentMarkOffser++;
-                            quantity = BigDecimal.ONE;
-                        }
 
                         positions.add(createPosition(new BigDecimal(random.nextInt(200)), quantity, mark));
                     }
@@ -76,13 +75,9 @@ public class InternetReceiptInteractor {
                     String email = "random" + Math.abs(random.nextInt()) + "@someemail.ru";
 
                     final CountDownLatch latch = new CountDownLatch(1);
-                    logReceipt(buffer, positions, payments, email);
-                    try {
-                        Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    new PrintSellReceiptCommand(positions, payments, null, email).process(
+                    final int index = receiptIndex;
+
+                    new PrintSellReceiptCommand2().create(positions, payments, null, email, null, null, userUuid).process(
                             activity,
                             new IntegrationManagerCallback() {
                                 @Override
@@ -90,10 +85,28 @@ public class InternetReceiptInteractor {
                                     try {
                                         IntegrationManagerFuture.Result result = integrationManagerFuture.getResult();
                                         if (result.getType() == IntegrationManagerFuture.Result.Type.OK) {
-                                            buffer.append("Receipt OK");
-                                            buffer.append("\n");
+                                            if (index % 300 == 0) {
+                                                new Thread() {
+                                                    @Override
+                                                    public void run() {
+                                                        super.run();
+                                                        TelegramApi.INSTANCE.sendMessage("Закончили чек:" + index);
+                                                    }
+                                                }.start();
+                                            }
                                         } else {
-                                            throw new RuntimeException("" + result.getType().name() + " " + result.getError().getMessage());
+                                            if (result.getType() != IntegrationManagerFuture.Result.Type.OK) {
+                                                PrintReceiptCommandErrorData data = PrintReceiptCommandErrorDataFactory.create(result.getData());
+                                                String dataStr = "";
+                                                if (data != null) {
+                                                    dataStr = "ext: ";
+                                                    dataStr += "errorcode = " + ((PrintReceiptCommandErrorData.KktError) data).getKktErrorCode();
+                                                    dataStr += " errordescription = " + ((PrintReceiptCommandErrorData.KktError) data).getKktErrorDescription();
+                                                }
+                                                Log.e("TAG", dataStr);
+
+                                                throw new RuntimeException("" + result.getType().name() + " " + result.getError().getMessage() + " " + dataStr);
+                                            }
                                         }
 
                                         latch.countDown();
@@ -104,6 +117,14 @@ public class InternetReceiptInteractor {
                                         activity.runOnUiThread(new Runnable() {
                                             @Override
                                             public void run() {
+                                                new Thread() {
+                                                    @Override
+                                                    public void run() {
+                                                        super.run();
+                                                        TelegramApi.INSTANCE.sendMessage("Есть проблема: " + exception.getMessage());
+                                                    }
+                                                }.start();
+
                                                 Toast.makeText(activity, "Есть проблема: " + exception.getMessage(), Toast.LENGTH_LONG).show();
                                             }
                                         });
@@ -118,20 +139,17 @@ public class InternetReceiptInteractor {
                     }
                 }
 
-                buffer.append("currentMarkOffser " + currentMarkOffser);
-                buffer.append("\n");
-                Log.e(TAG, "currentMarkOffser " + currentMarkOffser);
-
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
+                TelegramApi.INSTANCE.sendMessage("Закончили! Раз! Два!");
+
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.e(TAG, buffer.toString());
                         Toast.makeText(activity, "Закончили! Раз! Два!", Toast.LENGTH_LONG).show();
                     }
                 });
@@ -141,20 +159,20 @@ public class InternetReceiptInteractor {
     }
 
     private void logReceipt(StringBuffer buffer, List<Position> positions, List<Payment> payments, String email) {
-        for (Position position : positions) {
-            buffer.append(position.toString());
-            buffer.append("\n");
-            buffer.append("Position total " + position.getTotalWithoutDocumentDiscount().toPlainString());
-            buffer.append("\n");
-        }
-
-        for (Payment payment : payments) {
-            buffer.append(payment.toString());
-            buffer.append("\n");
-        }
-
-        buffer.append("Email: " + email);
-        buffer.append("\n");
+//        for (Position position : positions) {
+//            buffer.append(position.toString());
+//            buffer.append("\n");
+//            buffer.append("Position total " + position.getTotalWithoutDocumentDiscount().toPlainString());
+//            buffer.append("\n");
+//        }
+//
+//        for (Payment payment : payments) {
+//            buffer.append(payment.toString());
+//            buffer.append("\n");
+//        }
+//
+//        buffer.append("Email: " + email);
+//        buffer.append("\n");
 
     }
 
@@ -192,6 +210,37 @@ public class InternetReceiptInteractor {
         if (mark != null) {
             name = "Табак. " + name;
         }
+//        List<String> phones = new ArrayList<>();
+//        phones.add("79264618881");
+//        AgentRequisites agentRequisites2 = new AgentRequisites(
+//                new Agent(
+//                        null,
+//                        Agent.Type.AGENT,
+//                        null,
+//                        null,
+//                        null,
+//                        null,
+//                        null,
+//                        null,
+//                        null
+//                ),
+//                null,
+//                new Principal(
+//                        null,
+//                        null,
+//                        null,
+//                        "PrincipalShortName",
+//                        "1122334563",
+//                        null,
+//                        phones,
+//                        null
+//                ),
+//                null,
+//                null
+//        );
+//
+//        AgentRequisites agentRequisites = AgentReqFactory.INSTANCE.create("1122334563", "SomeName", phones);
+
         Position.Builder builder = Position.Builder.newInstance(
                 UUID.randomUUID().toString(),
                 UUID.randomUUID().toString(),
@@ -202,9 +251,10 @@ public class InternetReceiptInteractor {
                 quantity
         );
 
-        if (mark != null) {
-            builder.toTobaccoMarked(mark);
-        }
+
+//        if (mark != null) {
+//            builder.toTobaccoMarked(mark);
+//        }
 
         return builder.build();
     }
