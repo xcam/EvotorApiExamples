@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.xcam.discount">
+
+    <application>
+        <service android:name=".DiscountService">
+            <meta-data
+                android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"
+                android:value="#133788" />
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="ru.evotor.event.sell.DISCOUNT_SCREEN_ADDITIONAL_ITEMS" />
+            </intent-filter>
+        </service>
+        <activity android:name=".DiscountActivity" />
+        <receiver android:name=".ApplyDiscountBroadcastReceiver">
+            <intent-filter>
+                <action android:name="evotor.intent.action.receipt.sell.APPLY_DISCOUNT_TO_RECEIPT" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
