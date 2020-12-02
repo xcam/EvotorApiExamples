@@ -34,4 +34,11 @@
         android:text="@string/main_a_btn_print_document"
         app:layout_constraintTop_toBottomOf="@id/btnCorrectionReceipt" />
 
+    <Button
+        android:id="@+id/btnZReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_z_report"
+        app:layout_constraintTop_toBottomOf="@id/btnPrintDocument" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

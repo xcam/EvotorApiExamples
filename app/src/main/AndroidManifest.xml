@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="ru.evotor.permission.BINARY_NETWORK" />
     <uses-permission android:name="ru.evotor.permission.receipt.printExtra.SET" />
+    <uses-permission android:name="ru.evotor.permission.PRINT_Z_REPORT" />
 
     <application
         android:allowBackup="true"
@@ -29,48 +30,48 @@
             </intent-filter>
         </activity>
 
-<!--        <service-->
-<!--            android:name=".BeforePositionsEdited"-->
-<!--            android:enabled="true"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <action android:name="evo.v2.receipt.sell.beforePositionsEdited" />-->
-<!--            </intent-filter>-->
+        <!--        <service-->
+        <!--            android:name=".BeforePositionsEdited"-->
+        <!--            android:enabled="true"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter>-->
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--                <action android:name="evo.v2.receipt.sell.beforePositionsEdited" />-->
+        <!--            </intent-filter>-->
 
-<!--            <intent-filter android:priority="20">-->
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                &lt;!&ndash; Подписывает службу на событие ReceiptDiscountEvent и указывает смарт-терминалу отображать иконку приложения на экране оплаты чека продажи. &ndash;&gt;-->
-<!--                <action android:name="evo.v2.receipt.sell.receiptDiscount" />-->
-<!--            </intent-filter>-->
-<!--        </service>-->
+        <!--            <intent-filter android:priority="20">-->
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--                &lt;!&ndash; Подписывает службу на событие ReceiptDiscountEvent и указывает смарт-терминалу отображать иконку приложения на экране оплаты чека продажи. &ndash;&gt;-->
+        <!--                <action android:name="evo.v2.receipt.sell.receiptDiscount" />-->
+        <!--            </intent-filter>-->
+        <!--        </service>-->
 
-<!--        <service android:name=".PrintExtraService">-->
-<!--            <intent-filter>-->
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <action android:name="evo.v2.receipt.sell.printExtra.REQUIRED" />-->
-<!--            </intent-filter>-->
-<!--        </service>-->
+        <!--        <service android:name=".PrintExtraService">-->
+        <!--            <intent-filter>-->
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--                <action android:name="evo.v2.receipt.sell.printExtra.REQUIRED" />-->
+        <!--            </intent-filter>-->
+        <!--        </service>-->
 
-<!--        <service-->
-<!--            android:name=".device.MyDeviceService"-->
-<!--            android:enabled="true"-->
-<!--            android:exported="true"-->
-<!--            android:icon="@drawable/ic_launcher_background"-->
-<!--            android:label="Xcam-Virtual-Device">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="ru.evotor.devices.drivers.PaySystemService" />-->
-<!--                <action android:name="ru.evotor.devices.drivers.VirtualDriverManager" />-->
-<!--            </intent-filter>-->
+        <!--        <service-->
+        <!--            android:name=".device.MyDeviceService"-->
+        <!--            android:enabled="true"-->
+        <!--            android:exported="true"-->
+        <!--            android:icon="@drawable/ic_launcher_background"-->
+        <!--            android:label="Xcam-Virtual-Device">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="ru.evotor.devices.drivers.PaySystemService" />-->
+        <!--                <action android:name="ru.evotor.devices.drivers.VirtualDriverManager" />-->
+        <!--            </intent-filter>-->
 
-<!--            <meta-data-->
-<!--                android:name="device_categories"-->
-<!--                android:value="PAYSYSTEM" />-->
+        <!--            <meta-data-->
+        <!--                android:name="device_categories"-->
+        <!--                android:value="PAYSYSTEM" />-->
 
-<!--            <meta-data-->
-<!--                android:name="virtual_device"-->
-<!--                android:value="true" />-->
-<!--        </service>-->
+        <!--            <meta-data-->
+        <!--                android:name="virtual_device"-->
+        <!--                android:value="true" />-->
+        <!--        </service>-->
 
 
     </application>

@@ -1,19 +1,15 @@
 package ru.xcam.evotor.example
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import ru.xcam.evotor.example.interactor.CorrectionReceiptInteractor
-import ru.xcam.evotor.example.interactor.InternetReceiptInteractor
-import ru.xcam.evotor.example.interactor.OpenReceiptInteractor
-import java.lang.reflect.InvocationTargetException
+import ru.xcam.evotor.example.interactor.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_discount)
+        setContentView(R.layout.activity_main)
 
         btnOpenReceipt.setOnClickListener {
             OpenReceiptInteractor().execute(this)
@@ -28,18 +24,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnPrintDocument.setOnClickListener {
-            // PrintDocumentInteractor().execute(this)
+            PrintDocumentInteractor().execute(this)
+        }
 
-            Toast.makeText(this, getFirmwareOsVersion(), Toast.LENGTH_LONG).show()
+        btnZReport.setOnClickListener {
+            ZReportInteractor().execute(this)
         }
     }
 
     fun getFirmwareOsVersion(): String {
 
-         packageManager.getPackageInfo("ru.evotor.devices", 0).let {
-             it.versionCode
-             it.versionName
-         }
+        packageManager.getPackageInfo("ru.evotor.devices", 0).let {
+            it.versionCode
+            it.versionName
+        }
         return ""
         /*
         var ret = ""
