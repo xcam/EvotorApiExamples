@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +10,35 @@
         android:id="@+id/btnOpenReceipt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_a_btn_open_receipt" />
+        android:text="@string/main_a_btn_open_receipt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInternetReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_internet_receipt"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenReceipt" />
+
+    <Button
+        android:id="@+id/btnCorrectionReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_correction_receipt"
+        app:layout_constraintTop_toBottomOf="@id/btnInternetReceipt" />
+
+    <Button
+        android:id="@+id/btnPrintDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_print_document"
+        app:layout_constraintTop_toBottomOf="@id/btnCorrectionReceipt" />
+
+    <Button
+        android:id="@+id/btnZReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_a_btn_z_report"
+        app:layout_constraintTop_toBottomOf="@id/btnPrintDocument" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

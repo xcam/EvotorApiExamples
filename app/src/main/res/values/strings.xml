@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="main_a_btn_open_receipt">Открыть чек с товарами</string>
+    <string name="main_a_btn_internet_receipt">Интернет чеки</string>
+    <string name="main_a_btn_correction_receipt">Чеки коррекции</string>
+    <string name="main_a_btn_print_document">Print Document</string>
+    <string name="main_a_btn_z_report">Закрыть смену</string>
 </resources>
