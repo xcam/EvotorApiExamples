@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.xcam.receipt_logger">
+
+    <application>
+        <service
+            android:name=".SellReceiptProcessIntentService"
+            android:exported="false"></service>
+
+        <receiver android:name=".CustomSellReceiptBroadcastReceiver">
+            <intent-filter>
+                <action android:name="evotor.intent.action.receipt.sell.RECEIPT_CLOSED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

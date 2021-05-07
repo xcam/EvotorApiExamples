@@ -1,3 +1,4 @@
+include ':receipt_logger'
 include ':discount'
 include ':app'
 rootProject.name='My Application'
