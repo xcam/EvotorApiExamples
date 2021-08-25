@@ -1,3 +1,4 @@
 include ':discount'
 include ':app'
 rootProject.name='My Application'
+include ':disable_print_version_of_receipt'
